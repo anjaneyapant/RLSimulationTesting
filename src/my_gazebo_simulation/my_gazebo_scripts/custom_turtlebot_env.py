@@ -12,7 +12,7 @@ class CustomTurtleBotEnv(gym.Env):
     def __init__(self):
         super().__init__()
         
-        rclpy.init()
+        #rclpy.init()
         self.node = rclpy.create_node('turtlebot_env')
         
         self.cmd_vel_publisher = self.node.create_publisher(Twist, '/cmd_vel', 10)

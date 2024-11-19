@@ -12,7 +12,7 @@ class CustomTurtleBotEnv(gym.Env):
     def __init__(self):
         super().__init__()
         
-        rclpy.init()
+        #rclpy.init()
         self.node = rclpy.create_node('turtlebot_env')
         
         self.cmd_vel_publisher = self.node.create_publisher(Twist, '/cmd_vel', 10)
@@ -72,7 +72,7 @@ class CustomTurtleBotEnv(gym.Env):
     
     def close(self):
         self.node.destroy_node()
-        rclpy.shutdown()
+        #rclpy.shutdown()
         
     def get_observation(self):
         
@@ -87,3 +87,7 @@ class CustomTurtleBotEnv(gym.Env):
             return self.collision_penalty, True
         
         return 1.0, False
+    
+    def seed(self, seed=None):
+        self._seed = seed
+        np.random.seed(seed)

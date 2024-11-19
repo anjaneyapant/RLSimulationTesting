@@ -1,0 +1,44 @@
+[0.016s] Invoking command in '/root/gym_ros_envs/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/gym_ros_envs/src/my_gazebo_simulation -DCMAKE_INSTALL_PREFIX=/root/gym_ros_envs/install/my_gazebo_simulation
+[0.346s] -- The C compiler identification is GNU 11.4.0
+[1.110s] -- The CXX compiler identification is GNU 11.4.0
+[1.628s] -- Detecting C compiler ABI info
+[1.819s] -- Detecting C compiler ABI info - done
+[1.825s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.825s] -- Detecting C compile features
+[1.826s] -- Detecting C compile features - done
+[1.830s] -- Detecting CXX compiler ABI info
+[1.995s] -- Detecting CXX compiler ABI info - done
+[2.003s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.003s] -- Detecting CXX compile features
+[2.004s] -- Detecting CXX compile features - done
+[2.050s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.196s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.329s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.445s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.446s] -- Added test 'lint_cmake' to check CMake code style
+[2.447s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.449s] -- Added test 'xmllint' to check XML markup files
+[2.451s] -- Configuring done
+[2.457s] -- Generating done
+[2.458s] -- Build files have been written to: /root/gym_ros_envs/build/my_gazebo_simulation
+[2.465s] Invoked command in '/root/gym_ros_envs/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/gym_ros_envs/src/my_gazebo_simulation -DCMAKE_INSTALL_PREFIX=/root/gym_ros_envs/install/my_gazebo_simulation
+[2.468s] Invoking command in '/root/gym_ros_envs/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/gym_ros_envs/build/my_gazebo_simulation -- -j8 -l8
+[2.502s] Invoked command in '/root/gym_ros_envs/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/gym_ros_envs/build/my_gazebo_simulation -- -j8 -l8
+[2.530s] Invoking command in '/root/gym_ros_envs/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/gym_ros_envs/build/my_gazebo_simulation
+[2.535s] -- Install configuration: ""
+[2.537s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/ament_index/resource_index/package_run_dependencies/my_gazebo_simulation
+[2.538s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/ament_index/resource_index/parent_prefix_path/my_gazebo_simulation
+[2.538s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/ament_prefix_path.sh
+[2.538s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/ament_prefix_path.dsv
+[2.539s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/path.sh
+[2.539s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/path.dsv
+[2.539s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.bash
+[2.539s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.sh
+[2.539s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.zsh
+[2.540s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.dsv
+[2.540s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/package.dsv
+[2.540s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/ament_index/resource_index/packages/my_gazebo_simulation
+[2.540s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/cmake/my_gazebo_simulationConfig.cmake
+[2.541s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/cmake/my_gazebo_simulationConfig-version.cmake
+[2.541s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/package.xml
+[2.543s] Invoked command in '/root/gym_ros_envs/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/gym_ros_envs/build/my_gazebo_simulation

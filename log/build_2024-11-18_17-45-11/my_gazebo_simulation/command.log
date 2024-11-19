@@ -1,0 +1,6 @@
+Invoking command in '/root/gym_ros_envs/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/gym_ros_envs/src/my_gazebo_simulation -DCMAKE_INSTALL_PREFIX=/root/gym_ros_envs/install/my_gazebo_simulation
+Invoked command in '/root/gym_ros_envs/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/gym_ros_envs/src/my_gazebo_simulation -DCMAKE_INSTALL_PREFIX=/root/gym_ros_envs/install/my_gazebo_simulation
+Invoking command in '/root/gym_ros_envs/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/gym_ros_envs/build/my_gazebo_simulation -- -j8 -l8
+Invoked command in '/root/gym_ros_envs/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/gym_ros_envs/build/my_gazebo_simulation -- -j8 -l8
+Invoking command in '/root/gym_ros_envs/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/gym_ros_envs/build/my_gazebo_simulation
+Invoked command in '/root/gym_ros_envs/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/gym_ros_envs/build/my_gazebo_simulation

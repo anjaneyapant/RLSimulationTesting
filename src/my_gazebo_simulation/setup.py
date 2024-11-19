@@ -15,7 +15,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'train_trpo_turtlebot = my_gazebo_simulation.my_gazebo_scripts.train_trpo_turtlebot:main',
+            'train_trpo_turtlebot = src.my_gazebo_simulation.my_gazebo_scripts.train_trpo_turtlebot:main',
         ],
     },
 )

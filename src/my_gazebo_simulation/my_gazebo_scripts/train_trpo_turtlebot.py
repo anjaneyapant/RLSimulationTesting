@@ -7,7 +7,7 @@ from stable_baselines3.common.env_util import make_vec_env
 import gym
 
 #from my_gazebo_simulation.my_gazebo_scripts.custom_turtlebot_env import CustomTurtleBotEnv
-from my_gazebo_simulation.my_gazebo_scripts.custom_turtlebot_env import CustomTurtleBotEnv
+from custom_turtlebot_env import CustomTurtleBotEnv
 
 
 class TRPOTrainerNode(Node):

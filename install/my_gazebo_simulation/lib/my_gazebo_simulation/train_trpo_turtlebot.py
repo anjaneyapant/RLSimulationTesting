@@ -22,11 +22,11 @@ class TRPOTrainerNode(Node):
 
         # Initialize the TRPO model
         self.get_logger().info("Initializing the TRPO model...")
-        model = TRPO("MlpPolicy", env, verbose=1)
+        model = TRPO("MlpPolicy", env, verbose=1, device='cuda')
 
         # Start training
         self.get_logger().info("Starting training...")
-        model.learn(total_timesteps=100)
+        model.learn(total_timesteps=1000)
 
         # Save the model
         self.get_logger().info("Saving the trained model...")

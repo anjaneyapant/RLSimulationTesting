@@ -1,0 +1,29 @@
+[0.041s] Invoking command in '/root/gym_ros_envs/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/gym_ros_envs/build/my_gazebo_simulation -- -j8 -l8
+[0.196s] Invoked command in '/root/gym_ros_envs/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/gym_ros_envs/build/my_gazebo_simulation -- -j8 -l8
+[0.240s] Invoking command in '/root/gym_ros_envs/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/gym_ros_envs/build/my_gazebo_simulation
+[0.251s] -- Install configuration: ""
+[0.252s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/launch
+[0.253s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/launch/my_custom_world.launch.py
+[0.255s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/worlds
+[0.256s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/worlds/RLTestingENV
+[0.256s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/lib/my_gazebo_simulation
+[0.256s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/lib/my_gazebo_simulation/custom_turtlebot_env.py
+[0.257s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/lib/my_gazebo_simulation/train_trpo_turtlebot.py
+[0.257s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/lib/my_gazebo_simulation/__init__.py
+[0.257s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/lib/my_gazebo_simulation/train_trpo_turtlebot.py
+[0.257s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/ament_index/resource_index/package_run_dependencies/my_gazebo_simulation
+[0.257s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/ament_index/resource_index/parent_prefix_path/my_gazebo_simulation
+[0.257s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/ament_prefix_path.sh
+[0.257s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/ament_prefix_path.dsv
+[0.258s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/path.sh
+[0.258s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/path.dsv
+[0.258s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.bash
+[0.258s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.sh
+[0.258s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.zsh
+[0.258s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.dsv
+[0.258s] -- Installing: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/package.dsv
+[0.260s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/ament_index/resource_index/packages/my_gazebo_simulation
+[0.260s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/cmake/my_gazebo_simulationConfig.cmake
+[0.261s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/cmake/my_gazebo_simulationConfig-version.cmake
+[0.261s] -- Up-to-date: /root/gym_ros_envs/install/my_gazebo_simulation/share/my_gazebo_simulation/package.xml
+[0.264s] Invoked command in '/root/gym_ros_envs/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/gym_ros_envs/build/my_gazebo_simulation

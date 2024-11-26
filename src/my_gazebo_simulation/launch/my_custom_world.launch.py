@@ -18,7 +18,7 @@ def generate_launch_description():
     turtlebot_model = LaunchConfiguration('turtlebot_model', default='burger')
     
     #world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'custom_world.world')
-    world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'RLTestingENV.world')
+    world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'SimpleENV.world')
     
     gzserver_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(

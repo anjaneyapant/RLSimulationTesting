@@ -17,6 +17,7 @@ def generate_launch_description():
     y_pose = LaunchConfiguration('y_pose', default='0.0')
     
     world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'custom_world.world')
+    #world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'RLTestingENV.world')
     
     gzserver_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(

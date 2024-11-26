@@ -20,6 +20,9 @@ def generate_launch_description():
     #world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'custom_world.world')
     world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'RLTesting.world')
     
+    print(f"World file being used: {world_file}")
+
+    
     gzserver_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(gazebo_ros_pkg, 'launch', 'gzserver.launch.py')

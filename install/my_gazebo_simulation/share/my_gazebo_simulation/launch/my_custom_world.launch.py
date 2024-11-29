@@ -5,6 +5,7 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import Node
 
 def generate_launch_description():
     
@@ -18,7 +19,7 @@ def generate_launch_description():
     turtlebot_model = LaunchConfiguration('turtlebot_model', default='burger')
     
     #world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'custom_world.world')
-    world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'RLTesting.world')
+    world_file = os.path.join(my_gazebo_simulation_pkg, 'worlds', 'RLTestingENV.world')
     
     print(f"World file being used: {world_file}")
 
@@ -54,6 +55,15 @@ def generate_launch_description():
             'model' : turtlebot_model
         }.items()
     )
+    
+    ##spawn_simple_env_cmd = Node(
+    ##    package='gazebo_ros',
+    ##    executable='spawn_entity.py',
+    ##    arguments=[
+    ##        '-entity', 'SimpleENV',
+    ##        '-file', os.path.join(my_gazebo_simulation_pkg, 'models', )
+    ##    ]
+    ##)
     
     ld = LaunchDescription()
     ld.add_action(DeclareLaunchArgument('turtlebot_model', default_value='burger'))

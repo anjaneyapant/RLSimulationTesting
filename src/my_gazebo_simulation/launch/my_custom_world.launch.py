@@ -60,7 +60,7 @@ def generate_launch_description():
         package='gazebo_ros',
         executable='spawn_entity.py',
         arguments=[
-            '-entity', 'SimpleENV',
+            '-entity', 'NewSimpleENV',
             '-file', os.path.join(my_gazebo_simulation_pkg, 'models', 'NewSimpleENV', 'model.sdf'),
             '-x', '0', '-y', '0', '-z', '0'
         ],

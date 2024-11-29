@@ -56,14 +56,16 @@ def generate_launch_description():
         }.items()
     )
     
-    ##spawn_simple_env_cmd = Node(
-    ##    package='gazebo_ros',
-    ##    executable='spawn_entity.py',
-    ##    arguments=[
-    ##        '-entity', 'SimpleENV',
-    ##        '-file', os.path.join(my_gazebo_simulation_pkg, 'models', )
-    ##    ]
-    ##)
+    spawn_simple_env_cmd = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        arguments=[
+            '-entity', 'SimpleENV',
+            '-file', os.path.join(my_gazebo_simulation_pkg, 'models', 'SimpleENV', 'model.sdf'),
+            '-x', '0', '-y', '0', '-z', '0'
+        ],
+        output='screen'
+    )
     
     ld = LaunchDescription()
     ld.add_action(DeclareLaunchArgument('turtlebot_model', default_value='burger'))
@@ -71,5 +73,6 @@ def generate_launch_description():
     ld.add_action(gzclient_cmd)
     ld.add_action(robot_state_publisher_cmd)
     ld.add_action(spawn_turtlebot_cmd)
+    ld.add_action(spawn_simple_env_cmd)
     
     return ld

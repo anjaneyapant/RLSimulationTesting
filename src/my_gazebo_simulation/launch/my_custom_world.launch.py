@@ -61,7 +61,7 @@ def generate_launch_description():
         executable='spawn_entity.py',
         arguments=[
             '-entity', 'SimpleENV',
-            '-file', os.path.join(my_gazebo_simulation_pkg, 'models', 'SimpleENV', 'model.sdf'),
+            '-file', os.path.join(my_gazebo_simulation_pkg, 'models', 'NewSimpleENV', 'model.sdf'),
             '-x', '0', '-y', '0', '-z', '0'
         ],
         output='screen'

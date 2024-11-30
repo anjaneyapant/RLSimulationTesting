@@ -35,7 +35,7 @@ class TRPOTrainerNode(Node):
         # Start training
         self.get_logger().info("Starting training...")
         #model.learn(total_timesteps=100)
-        timesteps = 1000
+        timesteps = 100
         
         episode_rewards = []
         

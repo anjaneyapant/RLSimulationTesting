@@ -8,6 +8,7 @@ from sb3_contrib import TRPO
 from stable_baselines3.common.env_util import make_vec_env
 from stable_baselines3.common.logger import configure
 import gym
+from torch.utils.tensorboard import SummaryWriter
 
 #from my_gazebo_simulation.my_gazebo_scripts.custom_turtlebot_env import CustomTurtleBotEnv
 from custom_turtlebot_env import CustomTurtleBotEnv
@@ -22,6 +23,7 @@ class TRPOTrainerNode(Node):
         os.makedirs(self.log_dir, exist_ok = True)
         
         self.logger = configure(self.log_dir, ["stdout", "csv", "tensorboard"])
+        self.writer = SummaryWriter(log_dir=self.log_dir)
 
     def train(self):
         # Create the environment
@@ -45,6 +47,7 @@ class TRPOTrainerNode(Node):
                 episode_rewards.append(reward)
                 self.logger.record("episode_reward", reward)
                 self.logger.dump(step=_locals['env'].num_envs)
+                self.writer.add_scalar("Rewards/Episode", reward, len(episode_rewards))
                 
         model.learn(total_timesteps=timesteps, callback=reward_log_callbacks)
 
@@ -57,9 +60,12 @@ class TRPOTrainerNode(Node):
         
         with open(os.path.join(self.log_dir, "episode_rewards.csv"), "w") as file:
             writer = csv.writer(file)
-            writer.writenow(["Episode", "Reward"])
+            writer.writerow(["Episode", "Reward"])
             for i, r in enumerate(episode_rewards):
-                writer.writenow([i+1, r])
+                writer.writerow([i+1, r])
+                
+        self.writer.flush()
+        self.writer.close()
 
 
 def main(args=None):

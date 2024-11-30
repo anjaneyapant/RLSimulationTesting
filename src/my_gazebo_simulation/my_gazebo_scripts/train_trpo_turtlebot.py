@@ -60,9 +60,9 @@ class TRPOTrainerNode(Node):
         
         with open(os.path.join(self.log_dir, "episode_rewards.csv"), "w") as file:
             writer = csv.writer(file)
-            writer.writenow(["Episode", "Reward"])
+            writer.writerow(["Episode", "Reward"])
             for i, r in enumerate(episode_rewards):
-                writer.writenow([i+1, r])
+                writer.writerow([i+1, r])
                 
         self.writer.flush()
         self.writer.close()

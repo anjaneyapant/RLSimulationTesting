@@ -68,7 +68,7 @@ def generate_launch_description():
     )
     
     ld = LaunchDescription()
-    ld.add_action(DeclareLaunchArgument('turtlebot_model', default_value='waffle_pi'))
+    ld.add_action(DeclareLaunchArgument('turtlebot_model', default_value='burger'))
     ld.add_action(gzserver_cmd)
     ld.add_action(gzclient_cmd)
     ld.add_action(robot_state_publisher_cmd)

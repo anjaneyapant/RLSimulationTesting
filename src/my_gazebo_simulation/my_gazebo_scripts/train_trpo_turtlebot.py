@@ -9,9 +9,37 @@ from stable_baselines3.common.env_util import make_vec_env
 from stable_baselines3.common.logger import configure
 import gym
 from torch.utils.tensorboard import SummaryWriter
+from stable_baselines3.common.callbacks import BaseCallback
 
 #from my_gazebo_simulation.my_gazebo_scripts.custom_turtlebot_env import CustomTurtleBotEnv
 from custom_turtlebot_env import CustomTurtleBotEnv
+
+class RewardLoggingCallback(BaseCallback):
+    def __init__(self, log_dir, writer, verbose=0):
+        super(RewardLoggingCallback, self).__init__(verbose)
+        self.log_dir = log_dir
+        self.writer = writer
+        self.episode_rewards = []
+        
+    def _on_step(self):
+        info = self.locals['infos'][0]
+        
+        if 'episode' in info:
+            reward = info['epsiode']['r']
+            self.episode_rewards.append(reward)
+            self.logger.record("episode_reward", reward)
+            self.writer.add_scalar("Rewards/Episode", reward, len(self.episode_rewards))
+            
+        return True
+    
+    def save_rewards(self):
+        with open(os.path.join(self.log_dir, "episode_rewards.csv"), "w") as file:
+            writer = csv.writer(file)
+            writer.writerow(["Episode", "Reward"])
+            
+            for i, r in enumerate(self.episode_rewards):
+                writer.writerow([i+1, r])
+    
 
 
 class TRPOTrainerNode(Node):
@@ -39,31 +67,16 @@ class TRPOTrainerNode(Node):
         #model.learn(total_timesteps=100)
         timesteps = 100
         
-        episode_rewards = []
+        callback = RewardLoggingCallback(self.log_dir, self.writer)
+        model.learn(total_timesteps=timesteps, callback=callback)
         
-        def reward_log_callbacks(_locals, _globals):
-            reward = _locals['infos'][0].get('episode', {}).get('r')
-            if reward:
-                episode_rewards.append(reward)
-                self.logger.record("episode_reward", reward)
-                self.logger.dump(step=_locals['env'].num_envs)
-                self.writer.add_scalar("Rewards/Episode", reward, len(episode_rewards))
-                
-        model.learn(total_timesteps=timesteps, callback=reward_log_callbacks)
-
         # Save the model
         self.get_logger().info("Saving the trained model...")
         #model.save("trpo_turtlebot")
         model.save(os.path.join(self.log_dir, "trpo_turtlebot"))
         self.get_logger().info("Training complete!")
         
-        
-        with open(os.path.join(self.log_dir, "episode_rewards.csv"), "w") as file:
-            writer = csv.writer(file)
-            writer.writerow(["Episode", "Reward"])
-            for i, r in enumerate(episode_rewards):
-                writer.writerow([i+1, r])
-                
+        callback.save_rewards()        
         self.writer.flush()
         self.writer.close()
 

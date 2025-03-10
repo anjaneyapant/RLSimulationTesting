@@ -47,7 +47,8 @@ class TRPOTrainerNode(Node):
         super().__init__('trpo_trainer_node')
         self.get_logger().info("Initializing TRPO Trainer Node...")
         
-        self.log_dir = "/home/user/gym_ros_envs/logs"
+        #self.log_dir = "/home/user/gym_ros_envs/logs"
+        self.log_dir = "/home/user/RLSimulationTesting/logs"
         os.makedirs(self.log_dir, exist_ok = True)
         
         self.logger = configure(self.log_dir, ["stdout", "csv", "tensorboard"])

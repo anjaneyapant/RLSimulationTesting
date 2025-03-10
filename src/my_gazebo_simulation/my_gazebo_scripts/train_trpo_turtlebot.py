@@ -25,7 +25,7 @@ class RewardLoggingCallback(BaseCallback):
         info = self.locals['infos'][0]
         
         if 'episode' in info:
-            reward = info['epsiode']['r']
+            reward = info['episode']['r']
             self.episode_rewards.append(reward)
             self.logger.record("episode_reward", reward)
             self.writer.add_scalar("Rewards/Episode", reward, len(self.episode_rewards))

@@ -1,0 +1,29 @@
+[0.030s] Invoking command in '/home/aj_karti/RLSimulationTesting/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/aj_karti/RLSimulationTesting/build/my_gazebo_simulation -- -j16 -l16
+[0.079s] Invoked command in '/home/aj_karti/RLSimulationTesting/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/aj_karti/RLSimulationTesting/build/my_gazebo_simulation -- -j16 -l16
+[0.093s] Invoking command in '/home/aj_karti/RLSimulationTesting/build/my_gazebo_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/aj_karti/RLSimulationTesting/build/my_gazebo_simulation
+[0.101s] -- Install configuration: ""
+[0.102s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/launch
+[0.102s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/launch/my_custom_world.launch.py
+[0.103s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/worlds
+[0.103s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/worlds/RLTestingENV
+[0.103s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/lib/my_gazebo_simulation
+[0.104s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/lib/my_gazebo_simulation/train_trpo_turtlebot.py
+[0.104s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/lib/my_gazebo_simulation/custom_turtlebot_env.py
+[0.104s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/lib/my_gazebo_simulation/__init__.py
+[0.104s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/lib/my_gazebo_simulation/train_trpo_turtlebot.py
+[0.104s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/ament_index/resource_index/package_run_dependencies/my_gazebo_simulation
+[0.104s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/ament_index/resource_index/parent_prefix_path/my_gazebo_simulation
+[0.105s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/ament_prefix_path.sh
+[0.105s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/ament_prefix_path.dsv
+[0.105s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/path.sh
+[0.105s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/environment/path.dsv
+[0.105s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.bash
+[0.105s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.sh
+[0.105s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.zsh
+[0.106s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/local_setup.dsv
+[0.106s] -- Installing: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/package.dsv
+[0.106s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/ament_index/resource_index/packages/my_gazebo_simulation
+[0.106s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/cmake/my_gazebo_simulationConfig.cmake
+[0.106s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/cmake/my_gazebo_simulationConfig-version.cmake
+[0.106s] -- Up-to-date: /home/aj_karti/RLSimulationTesting/install/my_gazebo_simulation/share/my_gazebo_simulation/package.xml
+[0.109s] Invoked command in '/home/aj_karti/RLSimulationTesting/build/my_gazebo_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/aj_karti/RLSimulationTesting/build/my_gazebo_simulation

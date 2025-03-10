@@ -25,7 +25,7 @@ class RewardLoggingCallback(BaseCallback):
         info = self.locals['infos'][0]
         
         if 'episode' in info:
-            reward = info['epsiode']['r']
+            reward = info['episode']['r']
             self.episode_rewards.append(reward)
             self.logger.record("episode_reward", reward)
             self.writer.add_scalar("Rewards/Episode", reward, len(self.episode_rewards))
@@ -49,7 +49,7 @@ class TRPOTrainerNode(Node):
         
         #self.log_dir = "/home/user/gym_ros_envs/logs"
         self.log_dir = "/home/aj_karti/RLSimulationTesting/logs"
-        self.get_logger().info(f"Log Directory: (self.log_dir)")
+        self.get_logger().info(f"Log Directory: {self.log_dir}")
         os.makedirs(self.log_dir, exist_ok = True)
         
         self.logger = configure(self.log_dir, ["stdout", "csv", "tensorboard"])

@@ -62,7 +62,7 @@ class TRPOTrainerNode(Node):
 
         # Initialize the TRPO model
         self.get_logger().info("Initializing the TRPO model...")
-        model = TRPO("MlpPolicy", env, verbose=1)
+        model = TRPO("MlpPolicy", env, verbose=1, device="cpu")
 
         # Start training
         self.get_logger().info("Starting training...")

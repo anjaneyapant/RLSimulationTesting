@@ -58,7 +58,7 @@ class TRPOTrainerNode(Node):
     def train(self):
         # Create the environment
         self.get_logger().info("Creating the training environment...")
-        env = make_vec_env(CustomTurtleBotEnv, n_envs=4)
+        env = make_vec_env(CustomTurtleBotEnv, n_envs=8)
 
         # Initialize the TRPO model
         self.get_logger().info("Initializing the TRPO model...")

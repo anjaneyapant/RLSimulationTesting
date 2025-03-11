@@ -58,16 +58,16 @@ class TRPOTrainerNode(Node):
     def train(self):
         # Create the environment
         self.get_logger().info("Creating the training environment...")
-        env = make_vec_env(CustomTurtleBotEnv, n_envs=1)
+        env = make_vec_env(CustomTurtleBotEnv, n_envs=4)
 
         # Initialize the TRPO model
         self.get_logger().info("Initializing the TRPO model...")
-        model = TRPO("MlpPolicy", env, verbose=1)
+        model = TRPO("MlpPolicy", env, verbose=1, device="cpu")
 
         # Start training
         self.get_logger().info("Starting training...")
         #model.learn(total_timesteps=100)
-        timesteps = 100
+        timesteps = 10000
         
         callback = RewardLoggingCallback(self.log_dir, self.writer)
         model.learn(total_timesteps=timesteps, callback=callback)
